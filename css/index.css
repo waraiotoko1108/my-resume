@@ -1,0 +1,92 @@
+*{
+    font-size: 10px;
+    overflow:auto;
+}
+html{
+
+}
+body{
+    padding: 5em;
+
+}
+body .introduction div{
+    /*width: 50%;*/
+}
+body .introduction .introduction-left-part{
+    float: left;
+}
+body .introduction .introduction-right-part{
+    float: right;
+    line-height: 2.5em;
+}
+body .introduction .introduction-right-part div{
+    font-size: 1.7em;
+}
+.skill, .experience, .projects, .education{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+
+}
+.skill{
+    height: 15em;
+}
+.experience{
+    margin-bottom: 2em;
+    height: 20em;
+}
+.projects{
+    height: 15em;
+}
+.skill-section{
+
+    font-size: 1.5em;
+    color: #000000;
+}
+.skill-detail{
+    font-size: 1.5em;
+    color: #74706c;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+    width: 45%;
+}
+.experience-section{
+    margin-bottom: 1em;
+}
+.experience-detail{
+    font-size: 1.5em;
+    margin-bottom: 0.1em;
+
+}
+.projects-section{
+    float: left;
+    width: 50%;
+}
+.projects-detail-title{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+.projects-detail-desc{
+    font-size: 1.5em;
+    color: #6b6b6b;
+    width: 80%;
+}
+.education-detail{
+    font-size: 2em;
+}
+.rect{
+    font-size: 1.5em;
+    background-color: #5cb9e8;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+    width: 55%;
+    height: 1em;
+}
+h2{
+    font-size: 3em;
+    color: #2756A5;
+    font-family: -webkit-body;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.clear{ clear:both}
