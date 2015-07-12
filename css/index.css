@@ -17,7 +17,8 @@ body .introduction .introduction-left-part{
 }
 body .introduction .introduction-right-part{
     float: right;
-    line-height: 2.5em;
+    line-height: 3em;
+    padding: 1px 0;
 }
 body .introduction .introduction-right-part div{
     font-size: 1.7em;
@@ -28,15 +29,14 @@ body .introduction .introduction-right-part div{
     width: 100%;
 
 }
-.skill{
-    height: 15em;
+.skill > div{
+    float: left;
 }
 .experience{
     margin-bottom: 2em;
-    height: 20em;
 }
 .projects{
-    height: 15em;
+    margin-bottom: 2em;
 }
 .skill-section{
 
