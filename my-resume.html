@@ -6,71 +6,48 @@
     <title>龚立烜的简历</title>
 </head>
 <body>
-<div class="introduction" style="">
+<div class="introduction" style="margin-bottom: 2em;">
     <div class="introduction-left-part">
         <div style="font-size: 8em;color: darkcyan;">龚立烜</div>
         <div style="font-size: 3em;">Android|html5|Python</div>
     </div>
     <div class="introduction-right-part">
         <div style="">Website:http://www.waraiotoko.me/</div>
-        <div>Github:https://github.com/waraiotoko1108</div>
+        <div>Github:<a href="https://github.com/waraiotoko1108/">https://github.com/waraiotoko1108</a></div>
         <div>Weibo:@waraiotoko-g</div>
     </div>
 
 </div>
-
+<div class="about-me">
+    <h2>About Me</h2>
+    <div class="wrapper" style="">
+        <canvas id="graph" width="300" height="300" style=""></canvas>
+        <div class="list-desc">
+            <ul style="list-style: decimal inside;margin: 1.5em 0 0 auto;width: 38em;">
+                <li>我出生于90年代初，祖籍现籍浙江平湖，目前在上海工作生活。</li>
+                <li>我大学学习的是光学(物理)，目前是一名前端/Android开发者。</li>
+                <li>熟悉JS的基础和特性，有较丰富的原生开发经验。</li>
+                <li>熟练掌握underscore、requireJS、zepto。</li>
+                <li>熟悉CSS的原理。</li>
+                <li>对移动页面的开发和优化有经验。有Hybrid开发经验</li>
+                <li>对Android自定义控件、动画方面较熟悉。有native App开发经验</li>
+                <li>有Python/PHP开发经验。</li>
+            </ul>
+        </div>
+    </div>
+</div>
 <div class="skill">
     <h2>Skills:</h2>
-    <div style="width: 33%;display: inline-block;height: 100%;">
+    <div style="width: 33%;display: inline-block;height: 100%;" id="os">
         <div class="skill-section">OS:</div>
-        <div>
-            <div class="skill-detail" style="float: left">OS X</div>
-            <div class="rect" style="color: #096254; width: 40%"></div>
-        </div>
-        <div>
-            <div class="skill-detail" style="float: left">Linux</div>
-            <div class="rect" style="color: #096254; width: 35%"></div>
-        </div>
-        <div>
-            <div class="skill-detail" style="float: left">Windows</div>
-            <div class="rect" style="color: #096254;width: 40%"></div>
-        </div>
     </div>
     <!-------------------------------->
-    <div style="width: 33%;display: inline-block;height: 100%;">
+    <div style="width: 33%;display: inline-block;height: 100%;" id="coding">
         <div class="skill-section">Coding:</div>
-        <div>
-            <div class="skill-detail" style="float: left">Android</div>
-            <div class="rect" style="color: #096254;width: 40%"></div>
-        </div>
-        <div>
-            <div class="skill-detail" style="float: left">HTML/JS/CSS</div>
-            <div class="rect" style="color: #096254;width: 45%"></div>
-        </div>
-        <div>
-            <div class="skill-detail" style="float: left">Python/PHP</div>
-            <div class="rect" style="color: #096254;width: 30%"></div>
-        </div>
     </div>
     <!-------------------------------->
-    <div style="width: 33%;display: inline-block;height: 100%;">
-        <div class="skill-section">Tool:</div>
-        <div>
-            <div class="skill-detail" style="float: left">Chrome</div>
-            <div class="rect" style="color: #096254;"></div>
-        </div>
-        <div>
-            <div class="skill-detail" style="float: left">Android Studio</div>
-            <div class="rect" style="color: #096254;width: 50%"></div>
-        </div>
-        <div>
-            <div class="skill-detail" style="float: left">Eclipse</div>
-            <div class="rect" style="color: #096254;width: 46%"></div>
-        </div>
-        <div>
-            <div class="skill-detail" style="float: left">WebStorm</div>
-            <div class="rect" style="color: #096254;width: 50%"></div>
-        </div>
+    <div style="width: 33%;display: inline-block;height: 100%;" id="tools">
+        <div class="skill-section">Tools:</div>
     </div>
 </div>
 <div class="experience">
@@ -79,7 +56,7 @@
         <div class="experience-detail" style="float: left">July.2014-Now|</div><div class="experience-detail" style="float: left;color: #5cb9e8;">移动应用开发工程师</div><div class="experience-detail" style="float: left">|上海汉得信息技术股份有限公司</div>
         <div class="clear"></div>
         <div class="experience-detail" style="color: #6a6a6a;margin-top: 0.5em;">开发与MAS ERP产品对接的APP</div>
-        <div class="experience-detail" style="color: #6a6a6a;">开发甲方客户需要的Hybrid APP</div>
+        <div class="experience-detail" style="color: #6a6a6a;">Hybrid APP,webApp外包</div>
     </div>
     <!-------------------------------->
     <div class="experience-section">
@@ -101,15 +78,11 @@
     <h2>Projects:</h2>
     <div class="projects-section">
         <div class="projects-detail-title">腾讯－移动报销项目</div>
-        <div class="projects-detail-desc">接入在腾讯的微信企业号里的webApp。此项目与腾讯的报销系统对接，使腾讯员工可以在微信里记录费用，生成报销单。</div>
+        <div class="projects-detail-desc">接入在腾讯的微信企业号里的webApp。此项目与腾讯的报销系统对接，使腾讯员工可以在微信里记录费用，生成报销单。此项目中我承担所有的前端开发工作。</div>
     </div>
-    <div class="projects-section">
-        <div class="projects-detail-title">汉得移动报销</div>
-        <div class="projects-detail-desc">为汉得业务外包部门开发的App，与HR系统对接，上传单据并生成报销单。</div>
-    </div>
-    <div class="projects-section" style="margin-top: 1.5em;">
+    <div class="projects-section" style="">
         <div class="projects-detail-title">汉得融资租赁APP</div>
-        <div class="projects-detail-desc">和汉得融资租赁系统对接的APP，此项目中我承担了Android版本开发和接口开发的工作。Android版可视作个人项目。</div>
+        <div class="projects-detail-desc">和汉得融资租赁系统对接的APP，此项目中我承担了Android客户端开发和接口开发的工作。</div>
     </div>
     <div class="clear"></div>
     <div style="margin-top: .5em;font-size: 2em;">更多信息请戳<a href="https://github.com/waraiotoko1108/Projects-List" style="font-size: 1em;color: red;">这里</a></div>
@@ -121,5 +94,12 @@
     </div>
     <div class="clear"></div>
 </div>
+<div class="opacity_bg" style="">
+    <div class="ball ball_top"></div>
+    <div class="ball ball_right"></div>
+    <div class="ball ball_bottom"></div>
+    <div class="ball ball_left"></div>
+</div>
+<script src="js/require.js" data-main="js/main" ></script>
 </body>
 </html>

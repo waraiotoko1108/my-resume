@@ -6,7 +6,7 @@ html{
 
 }
 body{
-    padding: 5em;
+    padding: 4.5em 5em;
 
 }
 body .introduction div{
@@ -23,12 +23,61 @@ body .introduction .introduction-right-part{
 body .introduction .introduction-right-part div{
     font-size: 1.7em;
 }
-.skill, .experience, .projects, .education{
-    margin-top: 1em;
-    margin-bottom: 1em;
-    width: 100%;
 
+body .introduction .introduction-right-part div > a{
+    font-size: 1em;
 }
+ul > li {
+    font-size: 1.5em;
+    margin: 1.2em 0;
+}
+.about-me, .skill, .experience, .projects, .education{
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 100%;
+}
+.about-me .wrapper {
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+}
+.about-me .wrapper #graph {
+    position: relative;
+    -webkit-animation: graph-fade-in 1s ease;
+    -webkit-animation-play-state: paused;
+}
+@-webkit-keyframes graph-fade-in{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+ }
+.about-me .list-chart{
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+}
+.about-me .list-desc {
+    -moz-box-flex: 2;
+    -webkit-box-flex: 2;
+    box-flex: 2;
+    font-size: 2em;
+    position: relative;
+    /*-webkit-animation: desc-fade-in 2s ease;*/
+}
+@-webkit-keyframes desc-fade-in {
+    0% {
+        right: -20%;
+        opacity: .5;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+
+ }
 .skill > div{
     float: left;
 }
@@ -49,6 +98,7 @@ body .introduction .introduction-right-part div{
     margin-top: 0.5em;
     margin-bottom: 0.2em;
     width: 45%;
+    float: left;
 }
 .experience-section{
     margin-bottom: 1em;
@@ -79,9 +129,17 @@ body .introduction .introduction-right-part div{
     background-color: #5cb9e8;
     margin-top: 0.5em;
     margin-bottom: 0.2em;
-    width: 55%;
+    width: 0;
     height: 1em;
+    display: inline-block;
+    -webkit-transition: background-color 1s ease-out, width 1s;
 }
+
+.rect:hover{
+    background-color: #990066;
+}
+
+
 h2{
     font-size: 3em;
     color: #2756A5;
@@ -90,3 +148,106 @@ h2{
     margin-bottom: 0.5em;
 }
 .clear{ clear:both}
+
+.opacity_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #000000;
+    opacity: .7;
+    left: 0;
+    top: 0;
+}
+
+.opacity_bg .ball {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.ball_top {
+    background-color: #2756A5;
+    -webkit-animation: anim-ball-top 1s;
+}
+.ball_right {
+    background-color: #990066;
+    -webkit-animation: anim-ball-right 1s;
+}
+.ball_bottom {
+    background-color: #2756A5;
+    -webkit-animation: anim-ball-bottom 1s;
+}
+.ball_left {
+    background-color: #990066;
+    -webkit-animation: anim-ball-left 1s;
+}
+@-webkit-keyframes anim-ball-top {
+    0%{
+        top: 50%;
+    }
+    25%{
+        top: 35%;
+    }
+    50%{
+        top: 50%;
+    }
+    75%{
+        left: 35%;
+    }
+    100%{
+        left: 50%;
+    }
+}
+@-webkit-keyframes anim-ball-right {
+    0%{
+        left: 50%;
+    }
+    25%{
+        left: 65%;
+    }
+    50%{
+        left: 50%;
+    }
+    75%{
+        top: 65%;
+    }
+    100%{
+        top: 50%;
+    }
+}
+@-webkit-keyframes anim-ball-bottom {
+    0%{
+        top: 50%;
+    }
+    25%{
+        top: 65%;
+    }
+    50%{
+        top: 50%;
+    }
+    75%{
+        left: 65%;
+    }
+    100%{
+        left: 50%;
+    }
+}
+@-webkit-keyframes anim-ball-left {
+    0%{
+        left: 50%;
+    }
+    25%{
+        left: 35%;
+    }
+    50%{
+        left: 50%;
+    }
+    75%{
+        top: 35%;
+    }
+    100%{
+        top: 50%;
+    }
+}
