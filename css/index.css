@@ -37,9 +37,7 @@ ul > li {
     width: 100%;
 }
 .about-me .wrapper {
-    display: -moz-box;
-    display: -webkit-box;
-    display: box;
+    display: block;
 }
 .about-me .wrapper #graph {
     position: relative;
@@ -54,15 +52,8 @@ ul > li {
         opacity: 1;
     }
  }
-.about-me .list-chart{
-    -moz-box-flex: 1;
-    -webkit-box-flex: 1;
-    box-flex: 1;
-}
 .about-me .list-desc {
-    -moz-box-flex: 2;
-    -webkit-box-flex: 2;
-    box-flex: 2;
+    float: right;
     font-size: 2em;
     position: relative;
     /*-webkit-animation: desc-fade-in 2s ease;*/
