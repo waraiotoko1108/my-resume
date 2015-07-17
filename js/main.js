@@ -97,7 +97,7 @@ require(["underscore","zepto"],function(_,$){
 
     setTimeout(function(){
         $(".opacity_bg").hide();
-        $(".about-me .wrapper #graph").css("-webkit-animation-play-state","running");
+        $(".about-me .wrapper #graph").css("-webkit-animation-play-state","running").css("animation-play-state","running");
     },1500)
 
 

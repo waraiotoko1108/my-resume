@@ -41,8 +41,18 @@ ul > li {
 }
 .about-me .wrapper #graph {
     position: relative;
+    animation: graph-fade-in 1s ease;
     -webkit-animation: graph-fade-in 1s ease;
     -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+@keyframes graph-fade-in{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 @-webkit-keyframes graph-fade-in{
     0% {
@@ -160,19 +170,40 @@ h2{
 }
 .ball_top {
     background-color: #2756A5;
+    animation: anim-ball-top 1s;
     -webkit-animation: anim-ball-top 1s;
 }
 .ball_right {
     background-color: #990066;
+    animation: anim-ball-right 1s;
     -webkit-animation: anim-ball-right 1s;
 }
 .ball_bottom {
     background-color: #2756A5;
+    animation: anim-ball-bottom 1s;
     -webkit-animation: anim-ball-bottom 1s;
 }
 .ball_left {
     background-color: #990066;
+    animation: anim-ball-left 1s;
     -webkit-animation: anim-ball-left 1s;
+}
+@keyframes anim-ball-top {
+    0%{
+        top: 50%;
+    }
+    25%{
+        top: 35%;
+    }
+    50%{
+        top: 50%;
+    }
+    75%{
+        left: 35%;
+    }
+    100%{
+        left: 50%;
+    }
 }
 @-webkit-keyframes anim-ball-top {
     0%{
@@ -189,6 +220,23 @@ h2{
     }
     100%{
         left: 50%;
+    }
+}
+@keyframes anim-ball-right {
+    0%{
+        left: 50%;
+    }
+    25%{
+        left: 65%;
+    }
+    50%{
+        left: 50%;
+    }
+    75%{
+        top: 65%;
+    }
+    100%{
+        top: 50%;
     }
 }
 @-webkit-keyframes anim-ball-right {
@@ -208,6 +256,23 @@ h2{
         top: 50%;
     }
 }
+@keyframes anim-ball-bottom {
+    0%{
+        top: 50%;
+    }
+    25%{
+        top: 65%;
+    }
+    50%{
+        top: 50%;
+    }
+    75%{
+        left: 65%;
+    }
+    100%{
+        left: 50%;
+    }
+}
 @-webkit-keyframes anim-ball-bottom {
     0%{
         top: 50%;
@@ -223,6 +288,23 @@ h2{
     }
     100%{
         left: 50%;
+    }
+}
+@keyframes anim-ball-left {
+    0%{
+        left: 50%;
+    }
+    25%{
+        left: 35%;
+    }
+    50%{
+        left: 50%;
+    }
+    75%{
+        top: 35%;
+    }
+    100%{
+        top: 50%;
     }
 }
 @-webkit-keyframes anim-ball-left {
