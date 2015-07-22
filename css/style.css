@@ -9,16 +9,19 @@ body{
     padding: 4.5em 5em;
 
 }
-body .introduction div{
-    /*width: 50%;*/
+body .introduction{
+    margin-bottom: 2em;
+    position: relative;
 }
 body .introduction .introduction-left-part{
-    float: left;
+    display: inline-block;
 }
 body .introduction .introduction-right-part{
-    float: right;
+    display:inline-block;
     line-height: 3em;
     padding: 1px 0;
+    position: absolute;
+    right: 0;
 }
 body .introduction .introduction-right-part div{
     font-size: 1.7em;
