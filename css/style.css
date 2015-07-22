@@ -16,6 +16,9 @@ body .introduction{
 body .introduction .introduction-left-part{
     display: inline-block;
 }
+body .introduction .introduction-left-part div {
+    line-height: 1;
+}
 body .introduction .introduction-right-part{
     display:inline-block;
     line-height: 3em;
